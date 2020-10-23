@@ -116,14 +116,17 @@
                     <h1 class="h2">Dashboard</h1>
                 </div>
 
-                <h4>Select a project</h4>
+                <p class="lead" style="margin-bottom:2rem;">To get started on computing in ACCORD, select one of your projects, and then an environment.</p>
+
+                <h4><img src="images/no-1.png" alt="1" style="max-width:26px;margin-right:8px;" /> Select a project</h4>
                 <div class="row">
                     <div class="card" style="margin-right:1rem;margin-left:1rem;margin-bottom:2rem;width:40%;">
                         <div class="card-body">
                             <form>
                                 <div class="form-group">
-                                    <label for="exampleFormControlSelect1">You are a member of</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <label for="projectControlSelect">You are a member of</label>
+                                    <select class="form-control" id="projectControlSelect">
+                                        <option id="project_0" value="project_0"> - Select - </option>
                                         <option>PRX Telemetry Study</option>
                                         <option>Axial Surgery Outcomes</option>
                                     </select>
@@ -134,10 +137,10 @@
                     </div>
                 </div>
 
-                <hr size="1" />
+                <hr size="1" class="no" />
 
-                <h4>Select an Environment</h4>
-                <div class="row">
+                <h4 class="no"><img src="images/no-2.png" alt="2" style="max-width:26px;margin-right:8px;" /> Select an Environment</h4>
+                <div class="row no">
                     <div class="card" style="margin-right:1rem;margin-left:1rem;margin-bottom:2rem;width:40%;">
                         <div class="card-header">
                             Featured
@@ -165,7 +168,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row no">
                     <div class="card" style="margin-right:1rem;margin-left:1rem;margin-bottom:2rem;width:40%;">
                         <div class="card-header">
                             Featured

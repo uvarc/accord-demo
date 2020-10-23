@@ -1,5 +1,23 @@
 /* globals Chart:false, feather:false */
 
+$(document).ready(function(){
+	
+	$(".yes").hide();
+	$(".no").hide();
+
+	$("#projectControlSelect").change(function(){
+		if ( $(this).val() == "project_0" ) { 
+			$(".yes").show();
+			$(".no").hide();
+        }
+    if( $(this).val() !== "project_0" ) { 
+			$(".no").show();
+			$(".yes").hide();
+        }
+    }); 
+});
+
+
 (function () {
   'use strict'
 
