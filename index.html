@@ -40,7 +40,7 @@
 
 <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">ACCORD Research Console</a>
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/">ACCORD Research Console</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
             data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -116,28 +116,27 @@
                     <h1 class="h2">Dashboard</h1>
                 </div>
 
-                <h4>Select your project</h4>
+                <h4>Select a project</h4>
                 <div class="row">
                     <div class="card" style="margin-right:1rem;margin-left:1rem;margin-bottom:2rem;width:40%;">
                         <div class="card-body">
-                            <div class="btn-group dropright" style="">
-                                <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Select
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">PCR Telemetry</a>
-                                    <a class="dropdown-item" href="#">Axial Surgery Outcomes</a>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">You are a member of</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>PRX Telemetry Study</option>
+                                        <option>Axial Surgery Outcomes</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div style="float:right;"><button class="btn btn-sm btn-success">Create a new project</button></div>
+                            </form>
+                            <div style="float:right;"><button class="btn btn-sm btn-success"><span data-feather="chevron-right"></span> Create a new project</button></div>
                         </div>
                     </div>
                 </div>
 
                 <hr size="1" />
 
-                <h4>Select your Environment</h4>
+                <h4>Select an Environment</h4>
                 <div class="row">
                     <div class="card" style="margin-right:1rem;margin-left:1rem;margin-bottom:2rem;width:40%;">
                         <div class="card-header">
@@ -149,7 +148,7 @@
                             <h5 class="card-title">Python 3.7</h5>
                             <p class="card-text">Work within the Theia Python IDE. Includes a file manager, intelligent
                                 code editor, and a terminal.</p>
-                            <a href="environments.html" class="btn btn-sm btn-primary">Launch</a>
+                            <a href="environments.html" class="btn btn-sm btn-primary"><span data-feather="chevron-right"></span> Launch</a>
                         </div>
                     </div>
                     <div class="card" style="margin-right:1rem;margin-left:1rem;margin-bottom:2rem;width:40%;">
@@ -162,7 +161,7 @@
                             <h5 class="card-title">Jupyter Notebook</h5>
                             <p class="card-text">Use an interactive Jupyter Notebook to edit and run snippets of code
                                 against your data.</p>
-                            <a href="environments.html" class="btn btn-sm btn-primary">Launch</a>
+                            <a href="environments.html" class="btn btn-sm btn-primary"><span data-feather="chevron-right"></span> Launch</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +175,7 @@
                                 align="right" style="max-width:80px;" alt="RStudio" />
                             <h5 class="card-title">RStudio</h5>
                             <p class="card-text">The most popular IDE for R programming and data analysis.</p>
-                            <a href="environments.html" class="btn btn-sm btn-primary">Launch</a>
+                            <a href="environments.html" class="btn btn-sm btn-primary"><span data-feather="chevron-right"></span> Launch</a>
                         </div>
                     </div>
                 </div>
